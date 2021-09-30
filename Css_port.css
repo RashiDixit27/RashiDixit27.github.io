@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+div,section,ul,li,a,header{
+    box-sizing: border-box;
+    margin: 2px;
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+} 
+#name1 p{
+    display: inline-block;
+    margin: 10px; 
+    font-family: 'Ephesis', cursive;
+    font-size: 55px;
+    color: #595959;
+
+}
+#navbar1 li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px; 
+}
+#navbar1 li a{
+     color: #000000;
+     text-decoration: none;
+     font-family: 'Quicksand', sans-serif;
+     font-size: 26px;
+}
+
+#name2 p{
+    display: inline-block;
+    margin: 10px; 
+    font-family: 'Ephesis', cursive;
+    font-size: 55px;
+    color: #ffffff;
+
+}
+#navbar2 li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px; 
+}
+#navbar2 li a{
+     color: #ffffff;
+     text-decoration: none;
+     font-family: 'Quicksand', sans-serif;
+     font-size: 26px;
+}
+
+#name3 p{
+    display: inline-block;
+    margin: 10px; 
+    font-family: 'Ephesis', cursive;
+    font-size: 55px;
+    color: #ffffff;
+
+}
+#navbar3 li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px; 
+}
+#navbar3 li a{
+     color: #ffffff;
+     text-decoration: none;
+     font-family: 'Quicksand', sans-serif;
+     font-size: 26px;
+}
+
+#name4 p{
+    display: inline-block;
+    margin: 10px; 
+    font-family: 'Ephesis', cursive;
+    font-size: 55px;
+    color: #ffffff;
+
+}
+#navbar4 li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px; 
+}
+#navbar4 li a{
+     color: #ffffff;
+     text-decoration: none;
+     font-family: 'Quicksand', sans-serif;
+     font-size: 26px;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    float: left;
+}
+#main{
+    background-image: url('Photo/Bg_main.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#about{
+    background-image: url('Photo/BG2.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#edu{
+    background-image: url('Photo/BG1.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#contact{
+    background-image: url('Photo/BG3.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.text_main{
+    width: 90%;
+    color: gray;
+    position: fixed;
+    top: 32%;
+    left: 15%;
+    font-size: 55px;
+    text-align: left;
+}
+
+
+.text_main h1{
+    margin: 10px 10px ;
+}
+
+#profile{  
+    left: 62%;
+    top: 24%;
+    width:260px;
+    height:280px;
+    padding: 20px 50px;
+    position: fixed;
+    overflow: hidden;
+}
+#getdatetime{
+    position: relative;
+    margin-top: 580px;
+    flex: 40%;
+    margin-left: 80%;
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 5px;
+}
+
+.row1_about{
+    display: inline-block;
+    justify-content: space-between;
+    padding-top: 11%;
+    padding-left: 10%;
+}
+.colabout h1
+{
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+.column{
+    float: left;
+    width: 40%;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+.column img{
+    padding-left: 56%;
+    padding-top: 10%;
+    width:330px;
+    height:310px;
+    overflow: auto;
+}
+
+#skill li{
+    display: inline-block;
+}
+
+#resume a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px 12px;
+    background-color: #FFE4C4;
+    border-radius: 20px;
+    text-decoration: underline 1px  #595959;
+    color: #595959;
+}
+.text_contact{
+    margin-top: 90px;
+}
+
+th{
+ text-align: left;
+ font-size: 28px;
+ font-family: 'Quicksand', sans-serif ;
+ padding: 12px;
+}
+
+.edutable{
+ margin-top: 120px;
+ margin-left: 100px;
+}
+.rowedu td{
+    text-align: left;
+    padding: 12px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.edutable tr{
+    align-items: center;
+    align-content: center;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif ;
+}
+.edutable tr td{
+    padding: 5px 50px;
+}
+
+.edutable .eduimg img{
+    width:170px;
+    height:150px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    margin-left: 55px;
+    z-index: 1000;
+
+}
+
+.container .contactinfo{
+    position: absolute;
+    top: 110px;
+    width: 350px;
+    height: calc(100% - 80px);
+    z-index: 1; 
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.container .contactinfo h2{
+        font-family: 'Quicksand', sans-serif;
+    }
+.container .contactinfo ul.infolist li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+.container .contactinfo ul.infolist li span:nth-child(1){
+    width: 30px;
+    min-width: 30px;
+}
+.container .contactinfo ul.infolist li span:nth-child(1) img {
+    max-width: 100%;
+}
+.container .contactinfo ul.infolist li span:nth-child(2){
+    margin-left: 10px;
+    font-weight: 300;
+}
+.container .contactinfo ul.ext_con{
+    position: relative;
+    display: flex;
+}
+.container .contactinfo ul.ext_con li{
+    list-style: none ;
+    margin-right: 15px;
+}
+.container .contactinfo ul.ext_con li a{
+    text-decoration: none;
+}
+.container .contactform{
+    position: absolute;
+    padding: 70px 50px;
+    padding-left: 250px;
+    margin-left: 150px;
+    width: calc(100% - 150px);
+    height: 100%;
+}
+.container .contactform h2
+{
+    font-size: 36px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+.container .contactform .form{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+.container .contactform .form .inputbox.w50{
+    width: 60%;
+}
+.container .contactform .form .inputbox.w100{
+    width: 90%;
+    
+}
+
+.container .contactform .form .inputbox input, 
+.container .contactform .form .inputbox textarea
+{
+    width: 100%;
+    resize: none;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    border: none;
+}
+.container .contactform .form .inputbox textarea{
+    height: 120px;
+}
+
+
+.container .contactform .form .inputbox input:focus ~ span, 
+.container .contactform .form .inputbox input:valid ~ span,
+.container .contactform .form .inputbox textarea:focus ~ span, 
+.container .contactform .form .inputbox textarea:valid ~ span
+{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.container .contactform .form .inputbox input[type="submit"]
+{
+    position: relative;
+    cursor: pointer;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+    border-radius: 20px;
+    background: #FFE4C4;
+}
+.container .contactform .form .inputbox input[type="submit"]:hover
+{
+    background: #f08080;
+}
+
+@media (max-width : 1200px )
+{
+    .container{
+        width: 90%;
+        min-width: auto;
+        margin: 20px;
+    }
+    .contactinfo{
+        tab: 0;
+        height: 500px;
+        position: relative;
+    }
+    .contactinfo .contactform{
+        position: relative;
+        width: calc(100% - 350px);
+        padding-left: 0;
+        margin-left: 0;
+        padding: 40px;
+        height: 550px;
+    }
+}
+
+@media (max-width : 911px )
+{
+    section::before
+    {
+        display: none;
+    }
+    .container
+    {
+        margin-top: 150px;
+        display: flex;
+    }
+}
+@media (max-width : 600px )
+{
+    section::before
+    {
+        display: none;
+    }
+    .container
+    {
+        margin-top: 150px;
+        display: flex;
+        
+    }
+    .container .contactform{
+        display: none;
+    }
+}
