@@ -165,7 +165,7 @@ section{
     overflow: hidden;
 }
 #getdatetime{
-    position: relative;
+    position: absolute;
     margin-top: 580px;
     flex: 40%;
     margin-left: 80%;
@@ -192,6 +192,7 @@ section{
     padding: 5px;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
+    text-align: justify;
 }
 .column img{
     padding-left: 56%;
@@ -404,10 +405,7 @@ th{
 
 @media (max-width : 911px )
 {
-    section::before
-    {
-        display: none;
-    }
+
     .container
     {
         margin-top: 150px;
@@ -416,9 +414,117 @@ th{
 }
 @media (max-width : 600px )
 {
-    section::before
-    {
-        display: none;
+    
+    #name1 p{
+        font-size: 40px;
+        color: white;
+    }
+     
+    #name1 p{
+        padding-right: 35px;
+    }
+    #name1 {
+        background-color: palevioletred;
+    }
+    #navbar1 li a{
+        font-size: 20px;
+    }
+    #profile{
+        width: 150px;
+        height: 150px;
+        margin-top: 320px;
+        left: 5%;
+    }
+    .text_main h1{
+        margin-top: 35px;
+        font-size: 65px;
+    }
+    #getdatetime{
+        position: fixed;
+        margin-top: 560px;
+       font-size: 18px;
+}
+    #name2 p{
+        font-size: 32px;
+    }
+     #name2 {
+        background-color: palevioletred;
+    }
+    #name2 p{
+        padding-right: 40px;
+    }
+
+    #navbar2 li a{
+        font-size: 22px;
+    }
+    .row1_about{
+    margin-top: 190px;
+    background-color: #eeb6b5;
+    }
+    .colabout h1{
+         font-size: 18px;
+    }
+    #skill{
+        text-align: left;
+    }
+    #resume a{
+        font-size: 16px;
+    }
+    .column{
+        width: 90%;
+        float: none; 
+    }
+
+    .column img{
+        align-items: center;
+        padding-top: 20px;
+        height: 150px;
+        width: 150px;
+        padding-left: 20%;
+    }
+
+
+    #name3 p{
+        font-size: 32px;
+    }
+     #name3 {
+        background-color: palevioletred;
+    }
+    #name3 p{
+        padding-right: 40px;
+    }
+
+    #navbar3 li a{
+        font-size: 22px;
+    }
+    #name4 p{
+        font-size: 32px;
+    }
+    .edutable{
+    margin-top: 240px;
+    margin-left: 0px;
+    background-color: #eeb6b5;
+    }
+    .edutable .eduimg img{
+    width:90px;
+    height:80px;
+    }
+    .edutable tr{
+    font-size: 16px;
+    }
+    .edutable tr td{
+    padding: 5px 10px;
+    }
+    .rowedu td{
+    font-size: 20px;
+}
+
+    #name4 p{
+        padding-right: 40px;
+    }
+
+    #navbar4 li a{
+        font-size: 22px;
     }
     .container
     {
