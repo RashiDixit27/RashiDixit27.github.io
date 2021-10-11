@@ -54,6 +54,8 @@ function clearform()
   document.getElementById("ipt1").value="";
   document.getElementById("ipt2").value="";
   document.getElementById("ipt3").value="";
+  document.getElementById("sub").value='Submitted';
+  setTimeout(function(){document.getElementById("sub").value='Send';},2000);
 }
 showtime();
 function showtime()
