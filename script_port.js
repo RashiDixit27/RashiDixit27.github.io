@@ -58,8 +58,22 @@ function clearform()
 showtime();
 function showtime()
 {
-  var today = new Date();
-  var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-  var time = today.getHours()+':'+today.getMinutes()+':'+today.getSeconds();
-  document.getElementById("getdatetime").innerHTML = (date +' '+ time);
+                var today=new Date();
+                var day = today.getDate();
+                var month = today.getMonth()+1;
+                var year = today.getFullYear();
+                var h=today.getHours();
+                var m=today.getMinutes();
+                var s=today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('getdatetime').innerHTML = "Date: " + day + "/" + month + "/" + year + " " + "Time: " + h+":"+m+":"+s;
+                var t = setTimeout(function(){showtime()},500);
+      
+}
+
+    
+ function checkTime(i) {
+                if (i<10) {i = "0" + i};  
+                return i;
 }
