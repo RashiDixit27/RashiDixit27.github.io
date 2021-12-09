@@ -57,6 +57,32 @@ function clearform()
   document.getElementById("sub").value='Submitted';
   setTimeout(function(){document.getElementById("sub").value='Send';},2000);
 }
+
+window.addEventListener("DOMContentLoaded",function(){
+var form = document.getElementById("formsubmission");
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        document.getElementById("sub").value='Thanks for your submission!';
+        document.getElementById("sub").style.maxWidth = '280px';
+        setTimeout(function(){document.getElementById("sub").value='Send';document.getElementById("sub").style.maxWidth = '150px';},3000);
+        form.reset()
+      }).catch(error => {
+        document.getElementById("sub").value='Oops! There was a problem submitting your form!';
+        document.getElementById("sub").style.maxWidth = '400px';
+        setTimeout(function(){document.getElementById("sub").value='Send';document.getElementById("sub").style.maxWidth = '150px';},4000);
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+});
+
 showtime();
 function showtime()
 {
