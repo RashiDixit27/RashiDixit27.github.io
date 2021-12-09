@@ -373,6 +373,7 @@ th{
     border: none;
     max-width: 150px;
     padding: 12px;
+    margin-top: 10px;
     border-radius: 20px;
     background: #FFE4C4;
 }
