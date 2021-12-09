@@ -153,24 +153,24 @@
 			 <div class="contactform">
 			 	<h2>Send a Message</h2>
 			 	
-			 	<div class="form" action="https://formspree.io/f/mgedwgoj" method="POST" >
+			 	
+				<form class="form" id="formsubmission" action="https://formspree.io/f/mgedwgoj" method="post">
 			 		<div class="inputbox w50">
 			 			<span>Name</span>
-			 			<input id="ipt1" type="text" name="ipt1" required>
+			 			<input id="ipt1" type="text" name="name" required>
 			 		</div>
 			 		<div class="inputbox w50">
 			 			<span>Email</span>
-			 			<input id="ipt2" type="email" name="ipt2" required>
+			 			<input id="ipt2" type="email" name="email" required>
 			 		</div>
 			 		<div class="inputbox w100">
 			 			<span>Leave a message...</span>
-			 			<textarea id="ipt3" name="ipt3" required></textarea>
+			 			<textarea id="ipt3" name="message" required></textarea>
 			 		</div>
 			 		<div class="inputbox w100">
-			 			<input id="sub" type="submit" onclick="clearform()" value="Send">
+			 			<input id="sub" type="submit" value="Send">
 			 		</div>
-			 	</div>
-			 	
+				</form>
 			 </div>
 		</div>
 	</section>
